@@ -1,7 +1,7 @@
 /*
 //////////////////////////////////////////////////////
 
-FREE HTML5 TEMPLATE 
+FREE HTML5 TEMPLATE
 DESIGNED & DEVELOPED by FREEHTML5.CO
 
 //////////////////////////////////////////////////////
@@ -198,6 +198,17 @@ pre {
   position: relative;
   z-index: 102;
   display: block;
+}
+
+#fh5co-header #fh5co-logo a:hover, #fh5co-header #fh5co-logo a:active, #fh5co-header #fh5co-logo a:focus {
+  color: transparent;
+  outline: none;
+  text-decoration: none;
+  border-bottom: 0;
+}
+#fh5co-header #fh5co-logo a:hover {
+  color: transparent;
+  border-bottom: 0;
 }
 
 #fh5co-main-nav {
