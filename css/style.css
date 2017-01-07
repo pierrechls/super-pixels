@@ -343,6 +343,11 @@ pre {
   margin: 0;
   padding: 0;
 }
+#fh5co-work .fh5co-work-item img.img-vertical {
+  float: none;
+  margin: 0 auto;
+  padding: 0;
+}
 #fh5co-work .fh5co-work-item:hover, #fh5co-work .fh5co-work-item:focus, #fh5co-work .fh5co-work-item:active {
   border-bottom: none !important;
 }
@@ -359,6 +364,12 @@ pre {
   left: 20px;
   z-index: 55;
 }
+#fh5co-work .fh5co-work-item .fh5co-overlay-bg.vertical {
+  top: 100px;
+  bottom: 100px;
+  right: 100px;
+  left: 100px;
+}
 #fh5co-work .fh5co-work-item .fh5co-overlay-text {
   text-align: center;
   top: 50%;
@@ -369,6 +380,9 @@ pre {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+#fh5co-work .fh5co-work-item .fh5co-overlay-text.vertical {
+  padding: 0 110px;
 }
 #fh5co-work .fh5co-work-item .fh5co-overlay-text h2 {
   padding: 0 !important;
@@ -396,6 +410,10 @@ pre {
 }
 #fh5co-work .fh5co-work-item .fh5co-overlay-text .fh5co-categories li:last-child::after {
   content: "";
+}
+
+#fh5co-work .show-hide-works {
+  margin: 30px auto;
 }
 
 .fh5co-nav-toggle {
