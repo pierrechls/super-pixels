@@ -116,16 +116,45 @@
 
 	// Easy Repsonsive Tabs
 	var responsiveTabs = function(){
-		$('#fh5co-tab-feature').easyResponsiveTabs({
-	      type: 'default',
-	      width: 'auto',
-	      fit: true,
-	      inactive_bg: '',
-	      active_border_color: '',
-	      active_content_border_color: '',
-	      closed: 'accordion',
-	      tabidentify: 'hor_1'
-
+			$('#fh5co-tab-feature').easyResponsiveTabs({
+		      type: 'default',
+		      width: 'auto',
+		      fit: true,
+		      inactive_bg: '',
+		      active_border_color: '',
+		      active_content_border_color: '',
+		      closed: 'accordion',
+		      tabidentify: 'hor_1'
+		  });
+			$('#fh5co-tab-feature-2').easyResponsiveTabs({
+			    type: 'default',
+			    width: 'auto',
+			    fit: true,
+			    inactive_bg: '',
+			    active_border_color: '',
+			    active_content_border_color: '',
+			    closed: 'accordion',
+			    tabidentify: 'hor_2'
+	    });
+			$('#fh5co-tab-feature-3').easyResponsiveTabs({
+		      type: 'default',
+		      width: 'auto',
+		      fit: true,
+		      inactive_bg: '',
+		      active_border_color: '',
+		      active_content_border_color: '',
+		      closed: 'accordion',
+		      tabidentify: 'hor_3'
+	    });
+			$('#fh5co-tab-feature-4').easyResponsiveTabs({
+		      type: 'default',
+		      width: 'auto',
+		      fit: true,
+		      inactive_bg: '',
+		      active_border_color: '',
+		      active_content_border_color: '',
+		      closed: 'accordion',
+		      tabidentify: 'hor_4'
 	    });
 	    $('#fh5co-tab-feature-center').easyResponsiveTabs({
 	      type: 'default',
