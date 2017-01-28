@@ -120,27 +120,32 @@
 										<div>
 											<div class="row">
 												<div class="col-md-12">
-													<p>Les méthodes par seuillage consiste à faire une segmentation de l’histogramme des niveaux de gris de l’image, ce qui donne une segmentation de l’image. Elles sont adaptées pour la binarisation : le problème se ramène donc à trouver le seuil de niveau de gris $T$ optimal.</p>
+													<p>Les méthodes par seuillage consistent à faire une segmentation de l’histogramme des niveaux de gris de l’image, ce qui donne une segmentation de l’image.</p>
+													<p>Elles sont adaptées pour la binarisation : le problème se ramène donc à trouver le seuil de niveau de gris $T$ optimal.</p>
 												</div>
 											</div>
 										</div>
 										<div>
 											<div class="row">
 												<div class="col-md-12">
-													<p>L’image segmentée est alors une image binaire : J(x) = 1I(I (x)≥T). Mais ces méthodes n’utilisent pas l’information spatiale sur les pixels. D’autres méthodes font un seuillage local : pour tout x ∈ Ω, on calcule un seuil optimal T(x) à partir des caractéristiques locales de l’image. L’image segmentée est alors J(x) = 1I(I (x)≥T(x)).</p>
+													<p>L’image segmentée est alors une image binaire : $J(x)={ B }_{ (I(x)≥T) }$.</p>
+													<p>D’autres méthodes font un seuillage local : pour tout $x\in \Omega $, on calcule un seuil optimal $T(x)$ à partir des caractéristiques locales de l’image.<br/>L’image segmentée est alors égale à $J(x)={ B }_{ (I(x)≥T(x)) }$.</p>
 												</div>
 											</div>
 										</div>
 										<div>
 											<div class="row">
-												<div class="col-md-12">
-													<h2 class="h3">Lorem ipsum</h2>
+												<div class="col-md-4" style="text-align: center;">
+													<img src="images/methodes/seuillage/image-1.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+													<p style="font-style:italic; font-size:14px; text-align: center;">Image réelle</p>
 												</div>
-												<div class="col-md-6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quis deserunt dolorem, debitis cupiditate nihil velit dolores, inventore voluptatem delectus quos atque similique natus eaque qui, nisi repudiandae dolore sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aut maxime eius magnam.</p>
+												<div class="col-md-4" style="text-align: center;">
+													<img src="images/methodes/seuillage/image-2.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+													<p style="font-style:italic; font-size:14px; text-align: center;">Histogramme des niveaux de gris</p>
 												</div>
-												<div class="col-md-6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatem, vitae nesciunt ad hic quam quisquam sit possimus officia ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ex. Lorem ipsum dolor sit amet.</p>
+												<div class="col-md-4" style="text-align: center;">
+													<img src="images/methodes/seuillage/image-3.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+													<p style="font-style:italic; font-size:14px; text-align: center;">Segmentation (seuils 50 et 110)</p>
 												</div>
 											</div>
 										</div>
@@ -170,39 +175,53 @@
 											<div>
 												<div class="row">
 													<div class="col-md-12">
-														<h2 class="h3">Lorem ipsum</h2>
-													</div>
-													<div class="col-md-6">
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quis deserunt dolorem, debitis cupiditate nihil velit dolores, inventore voluptatem delectus quos atque similique natus eaque qui, nisi repudiandae dolore sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aut maxime eius magnam. Ipsa qui consequatur laborum culpa recusandae ullam repellendus, quod cum nemo consequuntur quidem labore minima dignissimos, eum!</p>
-													</div>
-													<div class="col-md-6">
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatem, vitae nesciunt ad hic quam quisquam sit possimus officia ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex fuga illum necessitatibus consequuntur aspernatur omnis quidem ut, similique esse assumenda.</p>
+														<p>L’idée est de chercher dans l’image les contours afin de séparer les différentes régions. La détection des contours permet de représenter la structure de l'image et d'extraire ses primitives (droites, segments, etc).</p>
+														<p>Il existe de très nombreuses méthodes de détection de contours, mais toutes ne donnent pas des courbes fermées.</p>
 													</div>
 												</div>
 											</div>
 											<div>
 												<div class="row">
 													<div class="col-md-12">
-														<h2 class="h3">Lorem &amp; ipsum</h2>
+														<p>En ce qui concerne la modélisation, les contours sont classés en trois modèles :</p>
 													</div>
-													<div class="col-md-6">
-														<p>Nam tristique porttitor neque, sit amet aliquet metus ultricies non. Vestibulum lacinia ante sit amet enim iaculis tempus. Nulla aliquam tincidunt leo, et consequat justo viverra id. Maecenas lacinia libero vel iaculis tincidunt. Quisque luctus massa eu sodales vehicula. Duis gravida at nunc sit amet sagittis. Fusce pulvinar scelerisque enim, vel interdum erat ullamcorper a. Cras elementum mauris justo, quis lacinia erat mollis sed. Donec malesuada odio eu metus consequat interdum. </p>
+													<div class="col-md-4" style="text-align: center;">
+														<img src="images/methodes/contours/contour-model-marche.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+														<p style="font-style:italic; font-size:14px; text-align: center;">Marche d'escalier</p>
 													</div>
-													<div class="col-md-6">
-														<p>In varius, ex ut tincidunt tempor, nunc nisi commodo quam, vel volutpat ex eros id tellus. Morbi cursus libero mi. In condimentum leo in libero volutpat rutrum. Ut pellentesque finibus lacus, sed imperdiet ex tincidunt vel. Proin et blandit nisl, dapibus faucibus urna. Praesent et nisi dictum, placerat purus eget, varius est. Suspendisse potenti. Curabitur blandit faucibus auctor.</p>
+													<div class="col-md-4" style="text-align: center;">
+														<img src="images/methodes/contours/contour-model-rampe.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+														<p style="font-style:italic; font-size:14px; text-align: center;">Rampe</p>
+													</div>
+													<div class="col-md-4" style="text-align: center;">
+														<img src="images/methodes/contours/contour-model-toit.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+														<p style="font-style:italic; font-size:14px; text-align: center;">Toit</p>
+													</div>
+													<div class="col-md-12">
+														<p>Les dérivées premières et secondes d'un contour en marche d'escalier sont données par :</p>
+													</div>
+													<div class="col-md-6" style="text-align: center;">
+															<img src="images/methodes/contours/derivee-premiere.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+															<p style="font-style:italic; font-size:14px; text-align: center;">Dérivée première</p>
+													</div>
+													<div class="col-md-6" style="text-align: center;">
+															<img src="images/methodes/contours/derivee-seconde.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+															<p style="font-style:italic; font-size:14px; text-align: center;">Dérivée seconde</p>
+													</div>
+													<div class="col-md-12">
+														<p>Un contour correspond à un extremum d'une dérivée première et à un passage par zéro d'une dérivée seconde.</p>
 													</div>
 												</div>
 											</div>
 											<div>
 												<div class="row">
-													<div class="col-md-12">
-														<h2 class="h3">Lorem ipsum</h2>
+													<div class="col-md-6" style="text-align: center;">
+														<img src="images/methodes/contours/image-1.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+														<p style="font-style:italic; font-size:14px; text-align: center;">Image réelle</p>
 													</div>
-													<div class="col-md-6">
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quis deserunt dolorem, debitis cupiditate nihil velit dolores, inventore voluptatem delectus quos atque similique natus eaque qui, nisi repudiandae dolore sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aut maxime eius magnam.</p>
-													</div>
-													<div class="col-md-6">
-														<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatem, vitae nesciunt ad hic quam quisquam sit possimus officia ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ex. Lorem ipsum dolor sit amet.</p>
+													<div class="col-md-6" style="text-align: center;">
+														<img src="images/methodes/contours/image-2.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+														<p style="font-style:italic; font-size:14px; text-align: center;">Détection de contours (avec filtre de Canny)</p>
 													</div>
 												</div>
 											</div>
