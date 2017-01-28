@@ -251,26 +251,14 @@
 												<div>
 													<div class="row">
 														<div class="col-md-12">
-															<h2 class="h3">Lorem ipsum</h2>
-														</div>
-														<div class="col-md-6">
-															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quis deserunt dolorem, debitis cupiditate nihil velit dolores, inventore voluptatem delectus quos atque similique natus eaque qui, nisi repudiandae dolore sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aut maxime eius magnam. Ipsa qui consequatur laborum culpa recusandae ullam repellendus, quod cum nemo consequuntur quidem labore minima dignissimos, eum!</p>
-														</div>
-														<div class="col-md-6">
-															<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatem, vitae nesciunt ad hic quam quisquam sit possimus officia ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex fuga illum necessitatibus consequuntur aspernatur omnis quidem ut, similique esse assumenda.</p>
+															<p>La méthode des Normalized Cuts voit le problème de segmentation d’image comme un problème de partition optimale d’un graphe $G = (V, E)$, où $V$ est l’ensemble des sommets et $E$ est l’ensemble des arrêtes.</p>
 														</div>
 													</div>
 												</div>
 												<div>
 													<div class="row">
 														<div class="col-md-12">
-															<h2 class="h3">Lorem &amp; ipsum</h2>
-														</div>
-														<div class="col-md-6">
-															<p>Nam tristique porttitor neque, sit amet aliquet metus ultricies non. Vestibulum lacinia ante sit amet enim iaculis tempus. Nulla aliquam tincidunt leo, et consequat justo viverra id. Maecenas lacinia libero vel iaculis tincidunt. Quisque luctus massa eu sodales vehicula. Duis gravida at nunc sit amet sagittis. Fusce pulvinar scelerisque enim, vel interdum erat ullamcorper a. Cras elementum mauris justo, quis lacinia erat mollis sed. Donec malesuada odio eu metus consequat interdum. </p>
-														</div>
-														<div class="col-md-6">
-															<p>In varius, ex ut tincidunt tempor, nunc nisi commodo quam, vel volutpat ex eros id tellus. Morbi cursus libero mi. In condimentum leo in libero volutpat rutrum. Ut pellentesque finibus lacus, sed imperdiet ex tincidunt vel. Proin et blandit nisl, dapibus faucibus urna. Praesent et nisi dictum, placerat purus eget, varius est. Suspendisse potenti. Curabitur blandit faucibus auctor.</p>
+															<p>On cherche d’abord la meilleure partition en deux parties A et B qui soient le plus dissemblables possible. On commence par définir : $$cut(A,B)=\sum _{ x\in A,y\in B }^{ \quad  }{ s(x,y) }$$ où $s$ est une mesure de similarité entre deux sommets du graphe. La bipartition optimale du graphe est celle qui minimise la quantité $$Ncut(A,B)=\frac { cut(A,B) }{ assoc(A,V) } +\frac { cut(A,B) }{ assoc(B,V) }$$ où $assoc(A,V)=\sum _{ x\in A,y\in V }^{ \quad  }{ w(x,y) } $. Trouver la solution revient donc à trouver les vecteurs propres associés aux deux plus petites valeurs propres d’une matrice (de taille $n\times n$ où $n$ est le nombre de sommets du graphe).</p>
 														</div>
 													</div>
 												</div>
