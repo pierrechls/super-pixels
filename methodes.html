@@ -88,6 +88,15 @@
 				<!-- Tabs -->
 				<div class="container">
 					<div class="row">
+
+						<div class="col-md-12">
+							<p>Avant de commencer, voici quelques notations :</p>
+							<p>On note $\Omega$ le domaine de l’image. Par exemple, on notera $\Omega ={ \left[ 0,1 \right]  }^{ 2 }$ dans un cadre continu, ou $\Omega ={ \left\{ 0,...,N-1 \right\}  }^{ 2 }$ dans un cadre discret. L’image, notée $I$, est une fonction définie sur $\Omega$ et à valeurs dans $\mathbb{R}$ ou dans ${ \left\{ 0,...,255 \right\}  }$. On note $h$ l’histogramme des niveaux de gris de l’image. Dans le cadre d’une image digitale de taille $N × N$, il est défini par :</p>
+							<p>$$\forall k \in \{ 0,...,255\} ,\quad h(k)=\frac { 1 }{ { N }^{ 2 } } \neq \{ x/1(x)=k\} $$</p>
+						</div>
+
+						<div class="fh5co-spacer fh5co-spacer-md"></div>
+
 						<div class="col-md-12">
 
 								<h2 class="fh5co-uppercase-heading-m">Méthodes par seuillage</h2>
@@ -105,26 +114,14 @@
 										<div>
 											<div class="row">
 												<div class="col-md-12">
-													<h2 class="h3">Lorem ipsum</h2>
-												</div>
-												<div class="col-md-6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda quis deserunt dolorem, debitis cupiditate nihil velit dolores, inventore voluptatem delectus quos atque similique natus eaque qui, nisi repudiandae dolore sit! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum aut maxime eius magnam. Ipsa qui consequatur laborum culpa recusandae ullam repellendus, quod cum nemo consequuntur quidem labore minima dignissimos, eum!</p>
-												</div>
-												<div class="col-md-6">
-													<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio voluptatem, vitae nesciunt ad hic quam quisquam sit possimus officia ratione. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, ex. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex fuga illum necessitatibus consequuntur aspernatur omnis quidem ut, similique esse assumenda.</p>
+													<p>Les méthodes par seuillage consiste à faire une segmentation de l’histogramme des niveaux de gris de l’image, ce qui donne une segmentation de l’image. Elles sont adaptées pour la binarisation : le problème se ramène donc à trouver le seuil de niveau de gris $T$ optimal.</p>
 												</div>
 											</div>
 										</div>
 										<div>
 											<div class="row">
 												<div class="col-md-12">
-													<h2 class="h3">Lorem &amp; ipsum</h2>
-												</div>
-												<div class="col-md-6">
-													<p>Nam tristique porttitor neque, sit amet aliquet metus ultricies non. Vestibulum lacinia ante sit amet enim iaculis tempus. Nulla aliquam tincidunt leo, et consequat justo viverra id. Maecenas lacinia libero vel iaculis tincidunt. Quisque luctus massa eu sodales vehicula. Duis gravida at nunc sit amet sagittis. Fusce pulvinar scelerisque enim, vel interdum erat ullamcorper a. Cras elementum mauris justo, quis lacinia erat mollis sed. Donec malesuada odio eu metus consequat interdum. </p>
-												</div>
-												<div class="col-md-6">
-													<p>In varius, ex ut tincidunt tempor, nunc nisi commodo quam, vel volutpat ex eros id tellus. Morbi cursus libero mi. In condimentum leo in libero volutpat rutrum. Ut pellentesque finibus lacus, sed imperdiet ex tincidunt vel. Proin et blandit nisl, dapibus faucibus urna. Praesent et nisi dictum, placerat purus eget, varius est. Suspendisse potenti. Curabitur blandit faucibus auctor.</p>
+													<p>L’image segmentée est alors une image binaire : J(x) = 1I(I (x)≥T). Mais ces méthodes n’utilisent pas l’information spatiale sur les pixels. D’autres méthodes font un seuillage local : pour tout x ∈ Ω, on calcule un seuil optimal T(x) à partir des caractéristiques locales de l’image. L’image segmentée est alors J(x) = 1I(I (x)≥T(x)).</p>
 												</div>
 											</div>
 										</div>
@@ -397,6 +394,13 @@
 		<script src="js/fastclick.js"></script>
 		<script src="js/velocity.min.js"></script>
 		<script src="js/main.js"></script>
+
+		<script type="text/x-mathjax-config">
+		  MathJax.Hub.Config({
+		    tex2jax: {inlineMath: [["$","$"],["\\(","\\)"]]}
+		  });
+		</script>
+		<script type="text/javascript" src="js/mathjax/MathJax.js?config=TeX-AMS_HTML-full"></script>
 
 	</body>
 </html>
