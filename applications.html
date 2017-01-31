@@ -147,8 +147,9 @@
 							<video id="webcam" width="640" height="480" style="display:none;"></video>
 	            <div style=" width:640px;height:480px;margin: 10px auto;">
 	                <canvas id="canvas" width="640" height="480"></canvas>
-	                <div id="no_rtc" class="alert alert-error" style="display:none;"></div>
-	                <div id="log" class="alert alert-info"></div>
+									<div id="my-gui-container"></div>
+	                <div id="no_rtc" class="" style="display:none;"></div>
+	                <div id="log" class=""></div>
 	            </div>
 					</div>
 				</div>
@@ -256,7 +257,7 @@
             } catch (error) {
                 $('#canvas').hide();
                 $('#log').hide();
-                $('#no_rtc').html('<h4>Something goes wrong...</h4>');
+                $('#no_rtc').html('<p>Something goes wrong...</p>');
                 $('#no_rtc').show();
             }
 
@@ -282,7 +283,7 @@
                 img_u8 = new jsfeat.matrix_t(640, 480, jsfeat.U8C1_t);
 
                 options = new demo_opt();
-                gui = new dat.GUI();
+                gui = new dat.GUI({ autoPlace: false });
 
                 gui.add(options, 'blur_radius', 0, 4).step(1);
                 gui.add(options, 'low_threshold', 1, 127).step(1);
@@ -291,6 +292,9 @@
                 stat.add("grayscale");
                 stat.add("gauss blur");
                 stat.add("canny edge");
+
+								var customContainer = document.getElementById('my-gui-container');
+								customContainer.appendChild(gui.domElement);
             }
 
             function tick() {
