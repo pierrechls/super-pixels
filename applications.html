@@ -41,6 +41,12 @@
 		  margin: 0 auto !important;
 		  overflow-x: hidden !important;
 		}
+
+		canvas {
+			width: 100%;
+			height: auto;
+		}
+
 	</style>
 
 	</head>
@@ -149,7 +155,7 @@
 								<video id="webcam" width="640" height="480" style="display:none;"></video>
 		            <div style="margin: 0 auto;">
 		                <canvas id="canvas" width="640" height="480"></canvas>
-										<div id="my-gui-container"></div>
+										<div id="my-gui-container" style="margin: 0rem auto 5rem auto;"></div>
 		                <div id="no_rtc" class="" style="display:none;"></div>
 		                <div id="log" class=""></div>
 		            </div>
