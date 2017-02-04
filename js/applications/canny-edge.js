@@ -94,9 +94,9 @@ $(window).load(function() {
             ctx.drawImage(video, 0, 0, 640, 480);
             var imageData = ctx.getImageData(0, 0, 640, 480);
 
-            stat.start("grayscale");
-            jsfeat.imgproc.grayscale(imageData.data, 640, 480, img_u8);
-            stat.stop("grayscale");
+            // stat.start("grayscale");
+            // jsfeat.imgproc.grayscale(imageData.data, 640, 480, img_u8);
+            // stat.stop("grayscale");
 
             var r = options.blur_radius|0;
             var kernel_size = (r+1) << 1;
