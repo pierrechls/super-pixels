@@ -361,11 +361,11 @@ function createMasking(canvas, modelpoints) {
 
 /*********** Code for stats **********/
 
-stats = new Stats();
-stats.domElement.style.position = 'absolute';
-stats.domElement.style.top = '0px';
-document.getElementById('container').appendChild( stats.domElement );
-
-document.addEventListener("clmtrackrIteration", function(event) {
-  stats.update();
-}, false);
+// stats = new Stats();
+// stats.domElement.style.position = 'absolute';
+// stats.domElement.style.top = '0px';
+// document.getElementById('container').appendChild( stats.domElement );
+//
+// document.addEventListener("clmtrackrIteration", function(event) {
+//   stats.update();
+// }, false);
