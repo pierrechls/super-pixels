@@ -95,7 +95,8 @@ $(window).load(function() {
             var imageData = ctx.getImageData(0, 0, 400, 300);
 
             stat.start("grayscale");
-            jsfeat.imgproc.grayscale(imageData.data, 400, 300, img_u8);
+            //jsfeat.imgproc.grayscale(imageData.data, 400, 300, img_u8);
+            jsfeat.imgproc.grayscale(imageData.data, img_u8);
             stat.stop("grayscale");
 
             var r = options.blur_radius|0;
