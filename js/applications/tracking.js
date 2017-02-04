@@ -92,12 +92,10 @@ if (navigator.getUserMedia) {
     }
     vid.play();
   }, function() {
-    insertAltVideo(vid);
-    alert("There was some problem trying to fetch video from your webcam, using a fallback video instead.");
+    $('#tracking-problem-webcam').html('<p>Le rendu live n\'est pas disponible. Vérifier que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</p>');
   });
 } else {
-  insertAltVideo(vid);
-  alert("Your browser does not seem to support getUserMedia, using a fallback video instead.");
+  $('#tracking-problem-browser').html('<p>Votre navigateur ne semble pas être assez récent pour permettre un rendu en live. Veuillez utiliser une version récente de Chrome.</p>');
 }
 
 vid.addEventListener('canplay', function() {videoReady = true;enablestart();}, false);

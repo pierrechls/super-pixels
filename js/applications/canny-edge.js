@@ -41,13 +41,13 @@ $(window).load(function() {
         }, function (error) {
             $('#canvas').hide();
             $('#log').hide();
-            $('#no_rtc').html('<p>Votre navigateur ne semble pas être assez récent pour permettre un rendu en live. Veuillez utiliser une version récente de Chrome.</p>');
+            $('#no_rtc').html('<p>Le rendu live n\'est pas disponible. Vérifier que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</p>');
             $('#no_rtc').show();
         });
     } catch (error) {
         $('#canvas').hide();
         $('#log').hide();
-        $('#no_rtc').html('<p>Le rendu live n\'est pas disponible. Vérifier que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</p>');
+        $('#no_rtc').html('<p>Votre navigateur ne semble pas être assez récent pour permettre un rendu en live. Veuillez utiliser une version récente de Chrome.</p>');
         $('#no_rtc').show();
     }
 
