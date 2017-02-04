@@ -18,7 +18,7 @@ $(window).load(function() {
                     attempts++;
                     setTimeout(findVideoSize, 200);
                 } else {
-                    onDimensionsReady(640, 480);
+                    onDimensionsReady(400, 300);
                 }
             }
         };
@@ -70,7 +70,7 @@ $(window).load(function() {
         ctx.fillStyle = "rgb(0,255,0)";
         ctx.strokeStyle = "rgb(0,255,0)";
 
-        img_u8 = new jsfeat.matrix_t(640, 480, jsfeat.U8C1_t);
+        img_u8 = new jsfeat.matrix_t(400, 300, jsfeat.U8C1_t);
 
         options = new demo_opt();
         gui = new dat.GUI({ autoPlace: false });
@@ -91,12 +91,12 @@ $(window).load(function() {
         compatibility.requestAnimationFrame(tick);
         stat.new_frame();
         if (video.readyState === video.HAVE_ENOUGH_DATA) {
-            ctx.drawImage(video, 0, 0, 640, 480);
-            var imageData = ctx.getImageData(0, 0, 640, 480);
+            ctx.drawImage(video, 0, 0, 400, 300);
+            var imageData = ctx.getImageData(0, 0, 400, 300);
 
-            // stat.start("grayscale");
-            // jsfeat.imgproc.grayscale(imageData.data, 640, 480, img_u8);
-            // stat.stop("grayscale");
+            stat.start("grayscale");
+            jsfeat.imgproc.grayscale(imageData.data, 400, 300, img_u8);
+            stat.stop("grayscale");
 
             var r = options.blur_radius|0;
             var kernel_size = (r+1) << 1;
