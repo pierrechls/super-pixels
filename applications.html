@@ -42,6 +42,14 @@
 		  overflow-x: hidden !important;
 		}
 
+		.dg.main {
+			width: 100% !important;
+		}
+
+		.dg.main .close-button {
+			display: none;
+		}
+
 		canvas {
 			width: 100%;
 			height: auto;
@@ -252,7 +260,7 @@
 							</div>
 							<br/>
 							<div id="controls">
-								<input class="btn" type="button" value="wait, loading video & images" disabled="disabled" onclick="startVideo()" id="startbutton"></input>
+								<input class="btn btn-primary btn-sm" type="button" value="wait, loading video & images" disabled="disabled" onclick="startVideo()" id="startbutton"></input>
 								<select name="mask" id="selectmask">
 									<option value="0">Average face</option>
 									<option value="1">Terminator</option>
@@ -282,6 +290,7 @@
 				</div>
 			</div>
 
+			<div class="fh5co-spacer fh5co-spacer-md"></div>
 
 			<!-- Start  Crédits -->
 			<div class="container">

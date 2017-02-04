@@ -32,7 +32,7 @@ var imagesReady = false;
 function enablestart() {
   if (videoReady && imagesReady) {
     var startbutton = document.getElementById('startbutton');
-    startbutton.value = "start";
+    startbutton.value = "Détecter le visage";
     startbutton.disabled = null;
   }
 }
