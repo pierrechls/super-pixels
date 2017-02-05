@@ -92,11 +92,11 @@ if (navigator.getUserMedia) {
     }
     vid.play();
   }, function() {
-    $('#tracking-problem-webcam').html('<p>Le rendu live n\'est pas disponible. <ul><li>Vérifiez que vous utilisez une version récente de Chrome.</li><li>Vérifiez que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</li></ul></p>');
+    $('#tracking-problem-webcam').html('<p>Le rendu live n\'est pas disponible. <i class="ti-face-sad"></i></p><p style="font-style:italic;">Vérifiez que vous utilisez une version récente de Chrome.</p><p style="font-style:italic;">Vérifiez que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</p>');
     $('#controls').hide()
   });
 } else {
-  $('#tracking-problem-browser').html('<p>Le rendu live n\'est pas disponible. <ul><li>Vérifiez que vous utilisez une version récente de Chrome.</li><li>Vérifiez que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</li></ul></p>');
+  $('#tracking-problem-browser').html('<p>Le rendu live n\'est pas disponible. <i class="ti-face-sad"></i></p><p style="font-style:italic;">Vérifiez que vous utilisez une version récente de Chrome.</p><p style="font-style:italic;">Vérifiez que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</p>');
   $('#controls').hide()
 }
 

@@ -41,13 +41,13 @@ $(window).load(function() {
         }, function (error) {
             $('#canvas').hide();
             $('#log').hide();
-            $('#no_rtc').html('<p>Le rendu live n\'est pas disponible. <ul><li>Vérifiez que vous utilisez une version récente de Chrome.</li><li>Vérifiez que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</li></ul></p>');
+            $('#no_rtc').html('<p>Le rendu live n\'est pas disponible. <i class="ti-face-sad"></i></p><p style="font-style:italic;">Vérifiez que vous utilisez une version récente de Chrome.</p><p style="font-style:italic;">Vérifiez que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</p>');
             $('#no_rtc').show();
         });
     } catch (error) {
         $('#canvas').hide();
         $('#log').hide();
-        $('#no_rtc').html('<p>Le rendu live n\'est pas disponible. <ul><li>Vérifiez que vous utilisez une version récente de Chrome.</li><li>Vérifiez que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</li></ul></p>');
+        $('#no_rtc').html('<p>Le rendu live n\'est pas disponible. <i class="ti-face-sad"></i></p><p style="font-style:italic;">Vérifiez que vous utilisez une version récente de Chrome.</p><p style="font-style:italic;">Vérifiez que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</p>');
         $('#no_rtc').show();
     }
 
