@@ -93,9 +93,11 @@ if (navigator.getUserMedia) {
     vid.play();
   }, function() {
     $('#tracking-problem-webcam').html('<p>Le rendu live n\'est pas disponible. Vérifier que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</p>');
+    $('#controls').hide()
   });
 } else {
-  $('#tracking-problem-browser').html('<p>Votre navigateur ne semble pas être assez récent pour permettre un rendu en live. Veuillez utiliser une version récente de Chrome.</p>');
+  $('#tracking-problem-browser').html('<p>Le rendu live n\'est pas disponible. Vérifier que vous avez une caméra de connectée et que vous avez accepté son utilisation au sein du navigateur.</p>');
+  $('#controls').hide()
 }
 
 vid.addEventListener('canplay', function() {videoReady = true;enablestart();}, false);
