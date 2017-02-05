@@ -292,6 +292,27 @@
 
 			<div class="fh5co-spacer fh5co-spacer-md"></div>
 
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+							<h2 class="fh5co-uppercase-heading-m">Segmentation par super-pixel</h2>
+							<div class="col-md-6" id="superpixel-segmentation-content">
+								<h4>Live</h4>
+								<div id="superpixel-segmentation-content-result"></div>
+								<input type="file" id="input-upload" onchange="previewFile()"><br>
+								<p id="log-image-too-big" style="display: none;">Image trop large</p>
+								<img src="" id="image-uploaded" style="display: none;" height="200" alt="Image preview...">
+							</div>
+							<div class="col-md-6">
+								<h4>Résultat</h4>
+								<img src="images/applications/superpixels/lena-result.png" style="width:100%; height:auto;" />
+							</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="fh5co-spacer fh5co-spacer-md"></div>
+
 			<!-- Start  Crédits -->
 			<div class="container">
 				<div class="row">
@@ -347,6 +368,10 @@
 		<script type="text/javascript" src="js/face_deformer.js"></script>
 		<script type="text/javascript" src="js/poisson_new.js"></script>
 		<script type="text/javascript" src="js/applications/tracking.js"></script>
+
+		<script type="text/javascript" src="js/imjs.js"></script>
+		<script type="text/javascript" src="js/imgsample.js"></script>
+		<script type="text/javascript" src="js/applications/superpixel-segmentation.js"></script>
 
 	</body>
 </html>
