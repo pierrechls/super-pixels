@@ -1,4 +1,4 @@
-var images = [
+hasGetUserMedia()var images = [
   {"id":"average", 	"path":"./images/applications/tracking/average2_crop.jpg"},
   {"id":"terminator", "path":"./images/applications/tracking/terminator_crop.jpg"},
   {"id":"walter2", 	"path":"./images/applications/tracking/walter2_crop.jpg"},
@@ -68,8 +68,8 @@ if (webGLContext == null) {
   alert("Your browser does not seem to support WebGL. Unfortunately this face mask example depends on WebGL, so you'll have to try it in another browser. :(");
 }
 
-navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
-window.URL = window.URL || window.webkitURL || window.msURL || window.mozURL;
+//navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia;
+//window.URL = window.URL || window.webkitURL || window.msURL || window.mozURL;
 
 // check for camerasupport
 if (navigator.getUserMedia) {
