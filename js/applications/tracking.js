@@ -1,4 +1,4 @@
-hasGetUserMedia()var images = [
+var images = [
   {"id":"average", 	"path":"./images/applications/tracking/average2_crop.jpg"},
   {"id":"terminator", "path":"./images/applications/tracking/terminator_crop.jpg"},
   {"id":"walter2", 	"path":"./images/applications/tracking/walter2_crop.jpg"},
