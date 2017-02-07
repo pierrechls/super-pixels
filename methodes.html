@@ -278,7 +278,7 @@
 													<div class="row">
 														<div class="col-md-12" style="text-align: center;">
 															<img src="images/methodes/normalized-cuts/image-1.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
-															<p style="font-style:italic; font-size:14px; text-align: center;">Exemples de résultats</p>
+															<p style="font-style:italic; margin-top:30px; font-size:14px; text-align: center;">Exemples de résultats</p>
 														</div>
 													</div>
 												</div>
@@ -315,24 +315,29 @@
 													<div>
 														<div class="row">
 															<div class="col-md-12">
-																<p>L'algorithme génère des superpixels en regroupant les pixels en fonction de leur couleur de similitude et leur proximité dans le plan image. Cela se fait dans les cinq dimensions de l'espace $[labxy]$, où $[lab]$ est le vecteur de couleur pixel dans l'espace de couleur CIELAB, et $(x,y)$ la position du pixel.</p>
-																<p>Alors que la distance maximale possible entre deux couleurs dans l'espace CIELAB est limitée, la distance spatiale dans le plan $(x,y)$ dépend de la taille de l'image. Il n'est pas possible d'utiliser simplement la distance euclidienne dans cet espace 5D sans normaliser les distances spatiales. De ce fait, afin de regrouper des pixels dans cet espace 5D, l'algorithme introduit une nouvelle mesure de distance qui considère la taille du superpixel.</p>
+																<p>L'algorithme génère des superpixels en regroupant les pixels en fonction de leur couleur de similitude et leur proximité dans le plan image. Cela se fait dans les cinq dimensions de l'espace $[labxy]$, où $[lab]$ est le vecteur de couleur pixel dans l'espace de couleur <a href="https://fr.wikipedia.org/wiki/CIE_L*a*b*" target="_blank">CIELAB</a>, et $(x,y)$ la position du pixel.</p>
+																<p>Alors que la distance maximale possible entre deux couleurs dans l'espace <a href="https://fr.wikipedia.org/wiki/CIE_L*a*b*" target="_blank">CIELAB</a> est limitée, la distance spatiale dans le plan $(x,y)$ dépend de la taille de l'image. Il n'est pas possible d'utiliser simplement la distance euclidienne dans cet espace 5D sans normaliser les distances spatiales. De ce fait, afin de regrouper des pixels dans cet espace 5D, l'algorithme introduit une nouvelle mesure de distance qui considère la taille du superpixel.</p>
 															</div>
 														</div>
 													</div>
 													<div>
 														<div class="row">
-															<div class="col-md-6" style="text-align: center;">
-																<img src="images/methodes/slic/image-1.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+															<div class="col-md-12">
+																<div class="col-md-6" style="text-align: center;">
+																	<img src="images/methodes/slic/image-1.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+																</div>
+																<div class="col-md-6" style="text-align: center;">
+																	<img src="images/methodes/slic/image-2.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+																</div>
+																<div class="col-md-6" style="text-align: center;">
+																	<img src="images/methodes/slic/image-3.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+																</div>
+																<div class="col-md-6" style="text-align: center;">
+																	<img src="images/methodes/slic/image-4.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+																</div>
 															</div>
-															<div class="col-md-6" style="text-align: center;">
-																<img src="images/methodes/slic/image-2.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
-															</div>
-															<div class="col-md-6" style="text-align: center;">
-																<img src="images/methodes/slic/image-3.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
-															</div>
-															<div class="col-md-6" style="text-align: center;">
-																<img src="images/methodes/slic/image-4.png" style="margin: 0 auto 5px auto; max-width: 100%;"/>
+															<div class="col-md-12">
+																<p style="font-style:italic; margin-top:30px; font-size:14px; text-align: center;">Exemples de résultats</p>
 															</div>
 														</div>
 													</div>
