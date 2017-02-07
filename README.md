@@ -2,6 +2,6 @@
 
 ### super-pixels
 
-Image processing project realised in IMAC Engineering School. This website was created only in an visual approach, no back-end work has been done. The goal was to introduce the concept of image segmentation, list some existing methods and illustrate possiibles applications.
+Image processing project realised in IMAC Engineering School. This website was created only in an visual approach, no back-end work has been done. The goal was to introduce the concept of image segmentation, list some existing methods and illustrate possibles applications.
 
 ![](https://pierrechls.github.io/super-pixels/images/preview.png)
